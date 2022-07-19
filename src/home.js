@@ -30,7 +30,7 @@ function createIntro() {
     return intro;
 }
 
-function createHome() {
+function initHome() {
     const main = document.querySelector('.main');
 
     const home = document.createElement('div');
@@ -40,4 +40,4 @@ function createHome() {
     main.appendChild(home);
 }
 
-export default createHome;
+export default initHome;

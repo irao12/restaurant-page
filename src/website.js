@@ -1,4 +1,4 @@
-import createHome from "./home";
+import initHome from "./home";
 
 function createNavbar() {
     const navbar = document.createElement('ul');
@@ -62,7 +62,7 @@ function initWebsite() {
     content.appendChild(main);
     content.appendChild(footer);
 
-    createHome();
+    initHome();
 }
 
 export default initWebsite;
