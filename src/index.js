@@ -1,4 +1,4 @@
-import createHome from "./home";
+import initWebsite from './website';
 import './style.css'
 
-createHome();
+initWebsite();
