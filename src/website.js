@@ -1,5 +1,27 @@
 import initHome from "./home";
 import initMenu from "./menu";
+import initContact from "./contact";
+
+function updateSelected(selected) {
+    const homeButton = document.querySelector('.home-button');
+    const menuButton = document.querySelector('.menu-button');
+    const contactButton = document.querySelector('.contact-button');
+
+    if (document.querySelector('.selected'))
+        document.querySelector('.selected').classList.remove('selected');
+
+    switch (selected) {
+        case 'home':
+            homeButton.classList.add('selected');
+            break;
+        case 'menu':
+            menuButton.classList.add('selected');
+            break;
+        case 'contact':
+            contactButton.classList.add('selected');
+            break;
+    }
+}
 
 function createNavbar() {
     const navbar = document.createElement('ul');
@@ -21,6 +43,19 @@ function createNavbar() {
     
     contactButton.classList.add('nav-button');
     contactButton.classList.add('contact-button');
+
+    homeButton.addEventListener('click', ()=>{
+        initHome();
+        updateSelected('home');
+    });
+    menuButton.addEventListener('click', ()=>{
+        initMenu();
+        updateSelected('menu');
+    });
+    contactButton.addEventListener('click', ()=>{
+        initContact();
+        updateSelected('contact');
+    });
 
     navbar.appendChild(homeButton);
     navbar.appendChild(menuButton);
@@ -80,6 +115,7 @@ function initWebsite() {
     content.appendChild(footer);
 
     initHome();
+    updateSelected('home');
 }
 
 export default initWebsite;

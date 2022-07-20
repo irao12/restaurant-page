@@ -7,4 +7,4 @@ initWebsite();
 
 document.querySelector('.home-button').addEventListener('click', initHome);
 document.querySelector('.menu-button').addEventListener('click', initMenu);
-document.querySelector('.contact-button').addEventListener('click', initContact);
+document.querySelector('.contact-button').addEventListener('click', initContact)
