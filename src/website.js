@@ -1,4 +1,5 @@
 import initHome from "./home";
+import initMenu from "./menu";
 
 function createNavbar() {
     const navbar = document.createElement('ul');
@@ -13,8 +14,13 @@ function createNavbar() {
     contactButton.textContent = 'Contact';
 
     homeButton.classList.add('nav-button');
+    homeButton.classList.add('home-button');
+
     menuButton.classList.add('nav-button');
+    menuButton.classList.add('menu-button');
+    
     contactButton.classList.add('nav-button');
+    contactButton.classList.add('contact-button');
 
     navbar.appendChild(homeButton);
     navbar.appendChild(menuButton);

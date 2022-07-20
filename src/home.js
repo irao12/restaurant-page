@@ -32,6 +32,7 @@ function createIntro() {
 
 function initHome() {
     const main = document.querySelector('.main');
+    main.textContent= '';
 
     const home = document.createElement('div');
     home.classList.add("home");
