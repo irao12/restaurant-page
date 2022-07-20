@@ -24,7 +24,7 @@ function initContact () {
     address.textContent = 'Somewhere out there';
 
     const restaurantImage = document.createElement('img');
-    restaurantImage.src = '../dist/images/restaurant.jpg';
+    restaurantImage.src = './images/restaurant.jpg';
 
     contact.appendChild(contactHeading);
     contact.appendChild(phoneHeading);
