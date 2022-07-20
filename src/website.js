@@ -54,6 +54,17 @@ function createFooter() {
     const footer = document.createElement('div');
     footer.classList.add('footer');
     footer.textContent = 'created by irao12';
+
+    const github = document.createElement('a');
+    github.href='https://github.com/irao12';
+
+    const githubIcon = document.createElement('img');
+    githubIcon.classList.add('github-icon');
+    githubIcon.src = '../dist/images/GitHub-Mark-32px.png';
+    github.appendChild(githubIcon);
+
+    footer.appendChild(github);
+
     return footer;
 }
 
